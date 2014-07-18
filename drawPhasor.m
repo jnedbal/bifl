@@ -43,4 +43,7 @@ set(hAxes, 'XTick', [], 'YTick', [], 'XLim', [-0.1, 1.1], ...
     'YLim', [-0.1, 0.6], 'Box', 'on', ...
     'ButtonDownFcn', @mouseclick_callback);
 
+ylabel('s(\omega)')
+xlabel('g(\omega)')
+
 set(get(hAxes, 'Children'), 'ButtonDownFcn', @mouseclick_callback);

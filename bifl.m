@@ -23,10 +23,10 @@ if ~exist('param', 'var')
     % Minimum number of photons in a burst
 	param.hvMin = 300;
     % Select range for analysis
-    param.analysisWindow = [720, 3730];
+    param.analysisWindow = [740, 3730];
     %param.analysisWindow = [0 4095];
     % Select phasor frequency
-    param.phasorFreq = 2 * pi * 4 * 8e+7;
+    param.phasorFreq = 2 * pi * 8e+7;
 end
 
 if param.hvMin < 30

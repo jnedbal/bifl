@@ -92,7 +92,7 @@ figs.tits = ...
          21, 21, 10, 14, 13};
 
 % Correct if only one burst is present
-if numel(starts == 3)
+if numel(starts) == 3
     figs.tits{1, 3} = 'First Burst';
 end
 
@@ -116,7 +116,7 @@ figs.ylimflow = [];
 
 for i = [figs.type.bursts, figs.type.avgBurst];
     % Correct if only one burst is present
-    if numel(starts == 3) && i == 4
+    if numel(starts) == 3 && i == 4
         continue;
     end
     

@@ -86,13 +86,13 @@ end
 
 % phasor G component
 l = l + 1;
-par{l} = 'g:';
+par{l} = 'g(\omega):';
 val{l} = sprintf('%g\\pm%g', gm, gs);
 valX(l) = 0.4;
 
 % phasor S component
 l = l + 1;
-par{l} = 's:';
+par{l} = 's(\omega):';
 val{l} = sprintf('%g\\pm%g', sm, ss);
 valX(l) = 0.4;
 
